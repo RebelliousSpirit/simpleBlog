@@ -108,3 +108,87 @@
 		border-color: $border-color-primary
 		color: $text-color-primary
 		text-decoration: none
+/*widgets styles*/
+.addon-widget
+	margin-bottom: 60px
+
+.addon-widget__header
+	text-transform: uppercase 
+	text-align: left
+	padding: 15px
+	background-color: $primary-bg
+	border-left: 3px solid $active-color
+	font-weight: 700
+	margin-bottom: 20px
+
+/*widget styles*/
+.addon-widget__content
+	padding: 20px 0
+
+.addon-widget__text
+	padding: 0 20px
+
+/*form styles*/
+.addon-form
+	position: relative
+.addon-form__field
+	font-size: 12px
+	border: 1px solid $border-color
+	width: 100%
+	height: 100%
+	color: $text-color-second
+	padding: 15px 12px
+	&:focus
+		border-color: $border-color-primary
+.addon-form__send
+	color: $text-color-second
+	background-color: transparent
+	border: 1px solid $border-color-second
+	border-radius: 50%
+	padding: 3px 6px
+	position: absolute
+	top: 50%
+	right: 10px
+	margin-top: -14px
+	transition: 0.3s
+	&:hover
+		border-color: $border-color-primary
+		color: $text-color-primary
+
+/*breadcrumb styles*/
+.addon-breadcrumb
+	padding: 15px 0
+	border-bottom: 1px solid $border-color-second
+	margin: 15px 0
+	border:
+		bottom: 1px solid $border-color-second
+
+.addon-breadcrumb__list
+	margin: 0
+	padding: 0
+
+.addon-breadcrumb__list-item
+	display: inline-block
+	position: relative
+	text-indent: 0
+	padding: 0 10px 
+	a
+		text-align: left
+		font-size: 20px
+		color: $text-color-second
+		transition: 0.3s
+		&:hover
+			color: $active-color
+	.active
+		color: $text-color-primary
+		font-size: 22px
+	&:after
+		content: ""
+		display: block
+		height: 100%
+		width: 2px
+		background-color: $text-color-second
+		position: absolute
+		top: 0
+		right: 0
+		transform: skewX(-20deg)
