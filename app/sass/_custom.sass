@@ -1,0 +1,110 @@
+// Custom Sass 
+.container
+	max-width: 995px
+	margin: 0 auto
+	padding: 0 15px
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.example-img
+	width: 100%
+
+.active-link
+	color: $active-color
+
+/*flex styles*/
+.addon-container-flex
+	display: flex
+	
+.addon-justify-center
+	justify-content: center
+
+.addon-justify-start
+	justify-content: start
+
+.addon-justify-end
+	justify-content: end
+
+.addon-justify-space-between
+	justify-content: space-between
+
+.addon-align-start
+	align-items: start
+
+
+.addon-align-center
+	align-items: center
+
+.addon-flex-wrap
+	flex-wrap: wrap
+
+/*text alignment*/
+.addon-text-center
+	text-align: center
+
+.addon-text-left
+	text-align: left
+
+.addon-text-right
+	text-align: right
+
+.addon-float-right
+	float: right
+
+.addon-float-left
+	float: left
+
+.addon-clear
+	&:after
+		content: ""
+		display: block
+		clear: both
+
+/* social link styles */
+.addon-social-list
+	margin: 0
+	padding: 0
+	li+li
+		margin-left: 20px
+	a
+		padding: 7px 15px
+		background-color: $btn-bg-primary
+		&:hover
+			background-color: $btn-rimary-bg-hover
+
+/*article styles*/
+.addon-article
+	padding-bottom: 80px
+
+.addon-article__post-img
+	margin-bottom: 20px
+	transition: all 0.6s ease
+	overflow: hidden
+	&:hover
+		opacity: 0.7
+
+.addon-article__post-title
+	font-size: 28px
+	font-weight: 700
+	text-align: center
+	text-transform: uppercase
+	margin-bottom: 55px
+	
+.addon-article__post-excerpt
+	margin-bottom: 35px
+
+.addon-article__post-view
+	background-color: transparent
+	padding: 8px 20px
+	border: 2px solid $border-color-second
+	color: $text-color-second
+	text-transform: capitalize
+	border-radius: 20px	
+	transition: 0.3s
+	&:hover
+		border-color: $border-color-primary
+		color: $text-color-primary
+		text-decoration: none

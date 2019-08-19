@@ -1,0 +1,157 @@
+/*=========================== media запросы =========================*/
+@media (min-width: 0px) and (max-width: 320px)
+	.header
+		margin-bottom: 25px
+
+	.header__content-wrap
+		flex-direction: column
+		padding: 
+			top: 25px
+			bottom: 35px
+
+	.header__logo
+		margin-bottom: 15px
+
+	.header__nav_top
+		ul
+			padding-left: 0
+			width: 100vw
+			text-align: center
+			li
+				display: block
+				border-left: none					
+				a
+					padding: 20px 0
+					border-bottom: 1px solid $border-color
+					&:after
+						height: 0
+					&:hover
+						border-color: $active-color
+	
+	.sidebar-right, .works
+		width: 100%
+
+	.works
+		order: 1
+
+	.sidebar-right
+		order: 3
+
+	.addon-article__post-title
+		font-size: 18px
+		margin-bottom: 35px
+
+	.page-nav
+		order: 2
+		padding: 20px
+
+	.page-nav__link
+		font-size: 12px
+		display: inline-block
+		vertical-align: bottom
+
+	.footer
+		padding: 45px 0
+
+@media (min-width: 321px) and (max-width: 480px)
+	.header
+		margin-bottom: 35px
+
+	.header__content-wrap
+		flex-direction: column
+		padding: 
+			top: 25px
+			bottom: 35px
+
+	.header__logo
+		margin-bottom: 15px
+
+	.header__nav_top
+		ul
+			padding: 0 35px
+			width: 100vw
+			text-align: center
+			li
+				display: block
+				border-left: none					
+				a
+					padding: 20px 0
+					border-bottom: 1px solid $border-color
+					&:after
+						height: 0
+					&:hover
+						border-color: $active-color
+	
+	.sidebar-right, .works
+		width: 100%
+
+	.works
+		order: 1
+
+	.sidebar-right
+		order: 3
+		padding: 
+			top: 30px
+			left: 25px
+			right: 25px 
+
+	.addon-article__post-title
+		font-size: 18px
+		margin-bottom: 35px
+
+	.page-nav
+		order: 2
+		padding: 20px
+
+	.page-nav__link
+		font-size: 12px
+		display: inline-block
+		vertical-align: bottom
+
+@media (min-width: 481px) and (max-width: 768px)
+	.header
+		margin-bottom: 45px
+
+	.header__content-wrap
+		flex-direction: column
+		padding: 
+			top: 25px
+			bottom: 0
+
+	.header__logo
+		margin-bottom: 15px
+
+	.header__nav_top
+		width: 100%
+		ul			
+			li
+				border: none			
+				a
+					padding: 20px 30px
+					&:after
+						height: 0
+					&:hover
+						background-color: $btn-bg-primary
+	
+	.sidebar-right, .works
+		width: 100%
+
+	.works
+		order: 1
+
+	.sidebar-right
+		order: 3
+		padding: 
+			top: 30px
+			left: 25px
+			right: 25px 
+
+	.addon-article__post-title
+		font-size: 18px
+		margin-bottom: 35px
+
+	.page-nav
+		order: 2
+		padding: 20px
+// @media (min-width: 769px) and (max-width: 992px)
+// @media (min-width: 993px) and (max-width: 1200px)

@@ -1,0 +1,64 @@
+
+/*миксины*/
+@mixin transition($property, $duration, $timing-func)
+	transition: $property $duration $timing-func
+
+@mixin flex($display, $flex-flow, $justify-content)
+	display: $display
+	flex-flow: $flex-flow
+	justify-content: $justify-content
+
+@mixin flex-item($grow, $shrink, $basis)
+	flex: $grow $shrink $basis
+
+@mixin translate( $x, $y)
+	transform: translate($x, $y) 
+
+@mixin scale( $scale, $unit)
+	transform: $scale($unit) 
+
+@mixin animation($name, $duration, $timing-func, $delay, $iteration-count)
+/*сокращеная запись animation: fadeOut 2s ease-in-out 5s 2 alternate forwards*/
+	/*имя, длительность, тайминг, количество повторов, направление,
+отсрочка и режим заполнения*/
+	animation-name: $name
+	animation-timing-function: $timing-func	
+	animation-duration: $duration
+	animation-delay: $delay
+	animation-iteration-count: $iteration-count/*бесконечное количество раз - infinite*/
+
+/*вращение*/
+@mixin rotate($deg)
+	transform:rotate($deg) 
+
+/*скашивание*/
+@mixin skew($x, $y)
+	transform:skew($x, $y)
+
+/*масштабирование*/
+@mixin scale($deg)
+	transform: scale($deg)
+
+/*transition*/
+@mixin transition($elem, $timing, $func)
+	transition:$elem $timing $func
+
+@mixin appearance($val)
+	appearance:$val
+
+@mixin placeholder($font, $color)
+	&::-webkit-input-placeholder
+		font: $font
+		color: $color
+	
+	&::-moz-placeholder
+		font: $font
+		color: $color
+	
+	&:-moz-placeholder
+		font: $font
+		color: $color
+	
+	&:-ms-placeholder
+		font: $font
+		color: $color	

@@ -1,0 +1,44 @@
+@import vars
+@import fonts
+@import libs
+@import header
+@import sidebar
+@import content
+@import footer
+@import blogs
+@import single
+@import custom
+@import media
+
+// main sass
+input, textarea
+	outline: none
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 20px
+	text-indent: 25px
+	font-family: 'Roboto', sans-serif
+	font-weight: 400
+	overflow-x: hidden
+	color: $text-color-primary
+	background-color: $body-bg
+
+ul, li 
+	list-style: none 
+
+a
+	color: $link-color-primary
+	transition: 0.3s
+	&:hover
+		color: $link-color-second
+		text-decoration: none
+
+blockquote
+	font-size: 14px
+	color: $text-color-second
+	padding: 25px
+	border:
+		left: 5px solid $border-color-primary 
